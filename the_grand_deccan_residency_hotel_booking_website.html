@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grand Deccan Residency | Luxury Heritage Hospitality</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display for luxury serif headings & Inter for clean UI -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#162238',
+                            900: '#0F172A',
+                            950: '#090E1A',
+                        },
+                        gold: {
+                            400: '#E5B85C',
+                            500: '#D4AF37',
+                            600: '#B59024',
+                        },
+                        cream: '#FAF8F5',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cream text-slate-800 font-sans antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-navy-900/95 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Brand Logo -->
+                <a href="#home" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center text-navy-950 font-serif font-bold text-xl shadow-lg group-hover:scale-105 transition-transform">
+                        GD
+                    </div>
+                    <div>
+                        <span class="font-serif text-lg sm:text-xl font-bold text-white tracking-wide block leading-none">THE GRAND DECCAN</span>
+                        <span class="text-[10px] uppercase tracking-[0.25em] text-gold-400 font-medium">Residency &amp; Spa</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-200">
+                    <a href="#home" class="hover:text-gold-400 transition-colors">Home</a>
+                    <a href="#rooms" class="hover:text-gold-400 transition-colors">Rooms &amp; Suites</a>
+                    <a href="#facilities" class="hover:text-gold-400 transition-colors">Facilities</a>
+                    <a href="#reviews" class="hover:text-gold-400 transition-colors">Guest Reviews</a>
+                    <a href="#booking" class="px-5 py-2.5 rounded-lg bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold transition-all shadow-md hover:shadow-gold-500/20">
+                        Book Stay
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Toggle Button -->
+                <button id="mobile-menu-btn" aria-label="Toggle Menu" class="md:hidden p-2.5 rounded-lg text-slate-200 hover:bg-white/10 focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-900 border-b border-white/10 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-white/5 hover:text-gold-400">Home</a>
+            <a href="#rooms" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-white/5 hover:text-gold-400">Rooms &amp; Suites</a>
+            <a href="#facilities" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-white/5 hover:text-gold-400">Facilities</a>
+            <a href="#reviews" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-white/5 hover:text-gold-400">Guest Reviews</a>
+            <a href="#booking" class="block py-3 px-4 rounded-lg bg-gold-500 text-navy-950 font-semibold text-center">Book Your Stay</a>
+        </div>
+    </header>
+
+    <!-- ==================== 1. HERO SECTION ==================== -->
+    <section id="home" class="relative min-h-[92vh] flex items-center pt-20 pb-12 overflow-hidden">
+        <!-- Background Image with Fallback & Dark Gradient Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img 
+                src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1920&q=80" 
+                onerror="this.onerror=null;this.src='https://placehold.co/1920x1080/0F172A/D4AF37?text=The+Grand+Deccan+Residency';"
+                alt="The Grand Deccan Residency Luxury Facade" 
+                class="w-full h-full object-cover object-center scale-105"
+            >
+            <div class="absolute inset-0 bg-gradient-to-b from-navy-950/80 via-navy-900/70 to-navy-950/90"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-3xl text-center md:text-left mx-auto md:mx-0">
+                <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-gold-400/30 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-6">
+                    <i class="fa-solid fa-crown"></i>
+                    <span>5-Star Heritage Luxury &bull; Hyderabad, India</span>
+                </div>
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                    Where Royal Deccan Heritage Meets <span class="text-gold-400 italic">Timeless Luxury</span>
+                </h1>
+                <p class="text-base sm:text-lg text-slate-200 mb-8 leading-relaxed max-w-2xl">
+                    Experience authentic Indian warmth, regal architecture, and bespoke hospitality at The Grand Deccan Residency. Curated suites, culinary artistry, and serene courtyard retreats await.
+                </p>
+            </div>
+
+            <!-- Quick Search Availability Bar -->
+            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-6 shadow-2xl border border-white/20 max-w-5xl mt-4">
+                <form id="quick-search-form" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-end">
+                    <div>
+                        <label for="hero-checkin" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1.5">
+                            <i class="fa-regular fa-calendar text-gold-600 mr-1"></i> Check-In Date
+                        </label>
+                        <input type="date" id="hero-checkin" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-navy-900 focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none">
+                    </div>
+                    <div>
+                        <label for="hero-checkout" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1.5">
+                            <i class="fa-regular fa-calendar-check text-gold-600 mr-1"></i> Check-Out Date
+                        </label>
+                        <input type="date" id="hero-checkout" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-navy-900 focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none">
+                    </div>
+                    <div>
+                        <label for="hero-guests" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1.5">
+                            <i class="fa-solid fa-user-group text-gold-600 mr-1"></i> Guests &amp; Rooms
+                        </label>
+                        <select id="hero-guests" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-navy-900 focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none bg-white">
+                            <option value="2-0">2 Adults, 0 Children</option>
+                            <option value="1-0">1 Adult, 0 Children</option>
+                            <option value="2-1">2 Adults, 1 Child</option>
+                            <option value="2-2">2 Adults, 2 Children</option>
+                            <option value="4-0">4 Adults (Family/Villa)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full py-3 px-6 rounded-xl bg-navy-900 hover:bg-navy-800 text-gold-400 font-semibold text-sm tracking-wide transition-all shadow-lg flex items-center justify-center space-x-2 cursor-pointer">
+                            <span>Check Availability</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 2. ROOM CATEGORIES SECTION ==================== -->
+    <section id="rooms" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-xs font-bold uppercase tracking-[0.2em] text-gold-600">Accommodations</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-900 mt-2 mb-4">Signature Rooms &amp; Royal Suites</h2>
+            <p class="text-slate-600 text-sm sm:text-base">
+                Thoughtfully designed spaces blending hand-carved teakwood accents, plush bedding, and modern smart-room conveniences. All tariffs include complimentary breakfast buffet.
+            </p>
+        </div>
+
+        <!-- Interactive Category Filter Tabs -->
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10" id="room-filters">
+            <button data-filter="all" class="filter-btn active px-5 py-2.5 rounded-full text-sm font-medium bg-navy-900 text-white shadow-md transition-all cursor-pointer">
+                All Rooms (4)
+            </button>
+            <button data-filter="deluxe" class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium bg-white text-slate-700 border border-slate-200 hover:border-gold-500 transition-all cursor-pointer">
+                Deluxe &amp; Executive
+            </button>
+            <button data-filter="family" class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium bg-white text-slate-700 border border-slate-200 hover:border-gold-500 transition-all cursor-pointer">
+                Family Garden
+            </button>
+            <button data-filter="villa" class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium bg-white text-slate-700 border border-slate-200 hover:border-gold-500 transition-all cursor-pointer">
+                Royal Heritage Villa
+            </button>
+        </div>
+
+        <!-- Room Cards Grid (Populated via JS for clean data binding) -->
+        <div id="rooms-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Dynamic Room Cards injected here -->
+        </div>
+    </section>
+
+    <!-- ==================== 3. HOTEL FACILITIES & AMENITIES ==================== -->
+    <section id="facilities" class="py-20 bg-navy-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-gold-400">World-Class Amenities</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">Curated Experiences &amp; Facilities</h2>
+                <p class="text-slate-300 text-sm sm:text-base">
+                    From rejuvenating Ayurvedic therapies to rooftop infinity swimming, every detail is crafted for effortless comfort.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Facility 1 -->
+                <div class="bg-navy-800/80 border border-white/10 rounded-2xl p-6 hover:border-gold-400/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/15 text-gold-400 flex items-center justify-center text-xl mb-4 group-hover:bg-gold-500 group-hover:text-navy-950 transition-colors">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold text-white mb-2">Free High-Speed Wi-Fi</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">Complimentary 1 Gbps fiber internet across all guest suites, lounges, and poolside cabanas.</p>
+                </div>
+
+                <!-- Facility 2 -->
+                <div class="bg-navy-800/80 border border-white/10 rounded-2xl p-6 hover:border-gold-400/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/15 text-gold-400 flex items-center justify-center text-xl mb-4 group-hover:bg-gold-500 group-hover:text-navy-950 transition-colors">
+                        <i class="fa-solid fa-water-ladder"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold text-white mb-2">Infinity Swimming Pool</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">Temperature-controlled rooftop infinity pool overlooking panoramic city skyline views.</p>
+                </div>
+
+                <!-- Facility 3 -->
+                <div class="bg-navy-800/80 border border-white/10 rounded-2xl p-6 hover:border-gold-400/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/15 text-gold-400 flex items-center justify-center text-xl mb-4 group-hover:bg-gold-500 group-hover:text-navy-950 transition-colors">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold text-white mb-2">Multi-Cuisine Restaurant</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">Savor royal Nizami delicacies, authentic South Indian thalis, and global fine dining at <em>Zaffran</em>.</p>
+                </div>
+
+                <!-- Facility 4 -->
+                <div class="bg-navy-800/80 border border-white/10 rounded-2xl p-6 hover:border-gold-400/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/15 text-gold-400 flex items-center justify-center text-xl mb-4 group-hover:bg-gold-500 group-hover:text-navy-950 transition-colors">
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold text-white mb-2">Spa &amp; Wellness Center</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">Holistic Ayurvedic therapies, aromatherapy massages, steam sauna, and 24-hour fitness studio.</p>
+                </div>
+
+                <!-- Facility 5 -->
+                <div class="bg-navy-800/80 border border-white/10 rounded-2xl p-6 hover:border-gold-400/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/15 text-gold-400 flex items-center justify-center text-xl mb-4 group-hover:bg-gold-500 group-hover:text-navy-950 transition-colors">
+                        <i class="fa-solid fa-bell-concierge"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold text-white mb-2">24/7 Concierge &amp; Dining</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">Round-the-clock in-room dining, heritage city tour assistance, and dedicated butler service.</p>
+                </div>
+
+                <!-- Facility 6 -->
+                <div class="bg-navy-800/80 border border-white/10 rounded-2xl p-6 hover:border-gold-400/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/15 text-gold-400 flex items-center justify-center text-xl mb-4 group-hover:bg-gold-500 group-hover:text-navy-950 transition-colors">
+                        <i class="fa-solid fa-plane-arrival"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold text-white mb-2">Luxury Airport Shuttle</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">Chauffeur-driven sedan and SUV transfers to and from Rajiv Gandhi International Airport.</p>
+                </div>
+
+                <!-- Facility 7 -->
+                <div class="bg-navy-800/80 border border-white/10 rounded-2xl p-6 hover:border-gold-400/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/15 text-gold-400 flex items-center justify-center text-xl mb-4 group-hover:bg-gold-500 group-hover:text-navy-950 transition-colors">
+                        <i class="fa-solid fa-square-parking"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold text-white mb-2">Free Valet Parking</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">Secure underground parking with 24/7 CCTV surveillance and EV fast-charging bays.</p>
+                </div>
+
+                <!-- Facility 8 -->
+                <div class="bg-navy-800/80 border border-white/10 rounded-2xl p-6 hover:border-gold-400/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/15 text-gold-400 flex items-center justify-center text-xl mb-4 group-hover:bg-gold-500 group-hover:text-navy-950 transition-colors">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold text-white mb-2">Royal Banquet &amp; Boardroom</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">State-of-the-art conference halls and pillarless ballrooms for corporate summits and weddings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 4. CUSTOMER REVIEWS SECTION ==================== -->
+    <section id="reviews" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <div>
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-gold-600">Guest Testimonials</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-900 mt-2">Stories From Our Guests</h2>
+                <div class="flex items-center space-x-3 mt-3">
+                    <div class="flex text-gold-500 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span class="text-sm font-semibold text-navy-900" id="avg-rating-display">4.9 / 5.0</span>
+                    <span class="text-xs text-slate-500" id="review-count-display">(Based on verified stays)</span>
+                </div>
+            </div>
+
+            <!-- Filter & Add Review Controls -->
+            <div class="flex flex-wrap items-center gap-3">
+                <select id="review-filter" class="px-4 py-2.5 rounded-xl border border-slate-300 bg-white text-sm font-medium text-navy-900 focus:ring-2 focus:ring-gold-500 outline-none">
+                    <option value="all">All Ratings</option>
+                    <option value="5">5 Stars Only</option>
+                    <option value="4">4 Stars &amp; Above</option>
+                </select>
+                <button id="toggle-review-form-btn" class="px-5 py-2.5 rounded-xl bg-navy-900 hover:bg-navy-800 text-gold-400 text-sm font-semibold transition-all shadow-md cursor-pointer">
+                    <i class="fa-solid fa-pen-to-square mr-1.5"></i> Write a Review
+                </button>
+            </div>
+        </div>
+
+        <!-- Collapsible Add New Review Form -->
+        <div id="new-review-panel" class="hidden bg-white rounded-2xl p-6 sm:p-8 shadow-xl border border-gold-500/30 mb-10">
+            <h3 class="font-serif text-xl font-bold text-navy-900 mb-4">Share Your Experience at The Grand Deccan</h3>
+            <form id="add-review-form" class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div>
+                    <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Your Name *</label>
+                    <input type="text" id="rev-name" required placeholder="e.g., Ananya Sharma" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-gold-500 outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Room Stayed In *</label>
+                    <select id="rev-room" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white focus:ring-2 focus:ring-gold-500 outline-none">
+                        <option value="Standard Deluxe Room">Standard Deluxe Room</option>
+                        <option value="Executive Suite">Executive Suite</option>
+                        <option value="Family Garden Room">Family Garden Room</option>
+                        <option value="Royal Heritage Villa">Royal Heritage Villa</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Star Rating *</label>
+                    <select id="rev-rating" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white focus:ring-2 focus:ring-gold-500 outline-none">
+                        <option value="5">★★★★★ (5/5 - Exceptional)</option>
+                        <option value="4">★★★★☆ (4/5 - Very Good)</option>
+                        <option value="3">★★★☆☆ (3/5 - Good)</option>
+                    </select>
+                </div>
+                <div class="sm:col-span-3">
+                    <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Your Review *</label>
+                    <textarea id="rev-comment" rows="3" required placeholder="Tell us about the hospitality, food, and room comfort..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-gold-500 outline-none"></textarea>
+                </div>
+                <div class="sm:col-span-3 flex justify-end gap-3">
+                    <button type="button" id="cancel-review-btn" class="px-5 py-2.5 rounded-xl border border-slate-300 text-slate-600 text-sm font-medium hover:bg-slate-100 cursor-pointer">Cancel</button>
+                    <button type="submit" class="px-6 py-2.5 rounded-xl bg-gold-500 hover:bg-gold-400 text-navy-950 text-sm font-bold shadow-md cursor-pointer">Publish Review</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Reviews Grid -->
+        <div id="reviews-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Dynamic Review Cards injected via JS -->
+        </div>
+    </section>
+
+    <!-- ==================== 5. INTERACTIVE BOOKING SECTION ==================== -->
+    <section id="booking" class="py-20 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-gold-600">Direct Reservation</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy-900 mt-2 mb-3">Book Your Royal Stay</h2>
+                <p class="text-slate-600 text-sm sm:text-base">
+                    Best rate guaranteed when booking directly. Instant confirmation with transparent INR pricing and GST breakdown.
+                </p>
+            </div>
+
+            <!-- Inline Validation Alert Banner (Replaces alert()) -->
+            <div id="booking-error-banner" class="hidden max-w-5xl mx-auto mb-6 p-4 rounded-xl bg-red-50 border border-red-300 text-red-800 text-sm flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-circle-exclamation text-red-600"></i>
+                    <span id="booking-error-text">Please check your dates and form inputs.</span>
+                </div>
+                <button type="button" onclick="document.getElementById('booking-error-banner').classList.add('hidden')" class="text-red-600 hover:text-red-800 font-bold px-2">&times;</button>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
+                <!-- Left Column: Booking Form -->
+                <div class="lg:col-span-2 bg-white rounded-2xl p-6 sm:p-8 shadow-xl border border-slate-200/80">
+                    <form id="hotel-booking-form" class="space-y-6">
+                        <div class="border-b border-slate-100 pb-4">
+                            <h3 class="font-serif text-xl font-bold text-navy-900">1. Stay &amp; Room Selection</h3>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div class="sm:col-span-2">
+                                <label for="book-room" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Room Category *</label>
+                                <select id="book-room" required class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm font-medium text-navy-900 focus:ring-2 focus:ring-gold-500 outline-none">
+                                    <option value="deluxe" data-price="4500" data-name="Standard Deluxe Room">Standard Deluxe Room — ₹4,500 / night</option>
+                                    <option value="executive" data-price="8200" data-name="Executive Suite">Executive Suite — ₹8,200 / night</option>
+                                    <option value="family" data-price="10500" data-name="Family Garden Room">Family Garden Room — ₹10,500 / night</option>
+                                    <option value="villa" data-price="15000" data-name="Royal Heritage Villa">Royal Heritage Villa — ₹15,000 / night</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="book-checkin" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Check-In Date *</label>
+                                <input type="date" id="book-checkin" required class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-navy-900 focus:ring-2 focus:ring-gold-500 outline-none">
+                            </div>
+
+                            <div>
+                                <label for="book-checkout" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Check-Out Date *</label>
+                                <input type="date" id="book-checkout" required class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-navy-900 focus:ring-2 focus:ring-gold-500 outline-none">
+                            </div>
+
+                            <div>
+                                <label for="book-adults" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Adults (12+ yrs) *</label>
+                                <select id="book-adults" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm text-navy-900 focus:ring-2 focus:ring-gold-500 outline-none">
+                                    <option value="1">1 Adult</option>
+                                    <option value="2" selected>2 Adults</option>
+                                    <option value="3">3 Adults</option>
+                                    <option value="4">4 Adults</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="book-children" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Children (0-11 yrs)</label>
+                                <select id="book-children" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-sm text-navy-900 focus:ring-2 focus:ring-gold-500 outline-none">
+                                    <option value="0" selected>0 Children</option>
+                                    <option value="1">1 Child</option>
+                                    <option value="2">2 Children</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="border-b border-slate-100 pb-4 pt-2">
+                            <h3 class="font-serif text-xl font-bold text-navy-900">2. Guest Information</h3>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div class="sm:col-span-2">
+                                <label for="book-name" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Primary Guest Full Name *</label>
+                                <input type="text" id="book-name" required placeholder="e.g., Vikramaditya Rao" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-navy-900 focus:ring-2 focus:ring-gold-500 outline-none">
+                            </div>
+
+                            <div>
+                                <label for="book-email" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Email Address *</label>
+                                <input type="email" id="book-email" required placeholder="vikram.rao@example.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-navy-900 focus:ring-2 focus:ring-gold-500 outline-none">
+                            </div>
+
+                            <div>
+                                <label for="book-phone" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Mobile Number (+91) *</label>
+                                <input type="tel" id="book-phone" required placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-navy-900 focus:ring-2 focus:ring-gold-500 outline-none">
+                            </div>
+
+                            <div class="sm:col-span-2">
+                                <label for="book-requests" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Special Requests (Optional)</label>
+                                <textarea id="book-requests" rows="2" placeholder="e.g., Airport pickup, Jain meal preference, high floor, honeymoon decor..." class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm text-navy-900 focus:ring-2 focus:ring-gold-500 outline-none"></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-navy-900 to-navy-800 hover:from-navy-800 hover:to-navy-900 text-gold-400 font-bold text-base tracking-wide shadow-xl transition-all flex items-center justify-center space-x-2 cursor-pointer">
+                            <i class="fa-solid fa-lock"></i>
+                            <span>Confirm Reservation &amp; Generate Receipt</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right Column: Live Fare Breakdown Card -->
+                <div class="bg-navy-900 text-white rounded-2xl p-6 sm:p-8 shadow-xl sticky top-24 border border-gold-500/20">
+                    <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-5">
+                        <h3 class="font-serif text-xl font-bold text-gold-400">Tariff Summary</h3>
+                        <span class="text-xs px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 font-medium">Free Cancellation</span>
+                    </div>
+
+                    <div class="space-y-4 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Selected Room</span>
+                            <span id="summary-room-name" class="font-semibold text-right text-white">Standard Deluxe Room</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Duration of Stay</span>
+                            <span id="summary-nights" class="font-semibold text-white">2 Nights</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Guests</span>
+                            <span id="summary-guests" class="font-semibold text-white">2 Adults, 0 Children</span>
+                        </div>
+
+                        <div class="border-t border-white/10 pt-4 space-y-2.5">
+                            <div class="flex justify-between text-slate-300">
+                                <span id="summary-rate-calc">₹4,500 &times; 2 nights</span>
+                                <span id="summary-subtotal">₹9,000</span>
+                            </div>
+                            <div class="flex justify-between text-slate-300">
+                                <span>Complimentary Breakfast</span>
+                                <span class="text-emerald-400 font-medium">INCLUDED</span>
+                            </div>
+                            <div class="flex justify-between text-slate-300">
+                                <span>GST (12% Luxury Hospitality Tax)</span>
+                                <span id="summary-gst">₹1,080</span>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-gold-500/30 pt-4 mt-4 flex justify-between items-baseline">
+                            <div>
+                                <span class="block text-base font-bold text-white">Total Payable</span>
+                                <span class="text-[11px] text-slate-400">Inclusive of all taxes</span>
+                            </div>
+                            <span id="summary-total" class="font-serif text-2xl sm:text-3xl font-bold text-gold-400">₹10,080</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 p-3.5 rounded-xl bg-white/5 border border-white/10 text-xs text-slate-300 space-y-1.5">
+                        <p><i class="fa-solid fa-check text-gold-400 mr-1.5"></i> Pay at hotel or via UPI / Card on arrival</p>
+                        <p><i class="fa-solid fa-check text-gold-400 mr-1.5"></i> Standard Check-in: 2:00 PM | Check-out: 11:00 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 6. FOOTER ==================== -->
+    <footer class="bg-navy-950 text-slate-300 pt-16 pb-8 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+                <!-- Col 1: Brand -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-9 h-9 rounded-lg bg-gold-500 flex items-center justify-center text-navy-950 font-serif font-bold text-lg">
+                            GD
+                        </div>
+                        <span class="font-serif text-lg font-bold text-white tracking-wide">THE GRAND DECCAN</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                        A sanctuary of royal Deccan heritage and contemporary Indian luxury located in the heart of Banjara Hills, Hyderabad.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#home" aria-label="Instagram" class="w-9 h-9 rounded-full bg-white/5 hover:bg-gold-500 hover:text-navy-950 flex items-center justify-center transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#home" aria-label="Facebook" class="w-9 h-9 rounded-full bg-white/5 hover:bg-gold-500 hover:text-navy-950 flex items-center justify-center transition-colors">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#home" aria-label="X Twitter" class="w-9 h-9 rounded-full bg-white/5 hover:bg-gold-500 hover:text-navy-950 flex items-center justify-center transition-colors">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="font-serif text-white font-semibold text-base mb-4">Quick Links</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#home" class="hover:text-gold-400 transition-colors">Home &amp; Availability</a></li>
+                        <li><a href="#rooms" class="hover:text-gold-400 transition-colors">Rooms &amp; Royal Suites</a></li>
+                        <li><a href="#facilities" class="hover:text-gold-400 transition-colors">Spa, Pool &amp; Dining</a></li>
+                        <li><a href="#reviews" class="hover:text-gold-400 transition-colors">Guest Testimonials</a></li>
+                        <li><a href="#booking" class="hover:text-gold-400 transition-colors">Direct Room Booking</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Details -->
+                <div>
+                    <h4 class="font-serif text-white font-semibold text-base mb-4">Contact &amp; Location</h4>
+                    <ul class="space-y-3 text-sm text-slate-400">
+                        <li class="flex items-start space-x-3">
+                            <i class="fa-solid fa-location-dot text-gold-400 mt-1"></i>
+                            <span>Road No. 12, Banjara Hills, Hyderabad, Telangana 500034, India</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-phone text-gold-400"></i>
+                            <span>+91 40 2345 6789 / +91 98490 12345</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-envelope text-gold-400"></i>
+                            <span>reservations@granddeccan.in</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: College Project Info -->
+                <div class="bg-navy-900/90 p-5 rounded-2xl border border-gold-500/20">
+                    <span class="inline-block px-2.5 py-0.5 rounded bg-gold-500/20 text-gold-400 text-[11px] font-bold uppercase tracking-wider mb-2">
+                        Academic Project
+                    </span>
+                    <h4 class="font-serif text-white font-semibold text-sm mb-2">Web Development Portfolio</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Designed &amp; Developed by <strong class="text-slate-200">[Your Name / Roll No.]</strong><br>
+                        Department of Computer Science &amp; Engineering<br>
+                        <span class="text-gold-400/90">[Your College / University Name]</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 The Grand Deccan Residency. All Rights Reserved. Academic Demonstration Project.</p>
+                <p>Built with HTML5, Tailwind CSS &amp; Vanilla JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BOOKING CONFIRMATION RECEIPT MODAL ==================== -->
+    <div id="confirmation-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-navy-950/80 backdrop-blur-sm">
+        <div class="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-gold-500/30 animate-[fadeIn_0.25s_ease-out]">
+            <!-- Modal Top Banner -->
+            <div class="bg-navy-900 p-6 text-center relative">
+                <button id="close-modal-top" aria-label="Close modal" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl cursor-pointer">&times;</button>
+                <div class="w-14 h-14 rounded-full bg-emerald-500/20 border border-emerald-400 text-emerald-400 flex items-center justify-center text-2xl mx-auto mb-3">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <h3 class="font-serif text-2xl font-bold text-white">Booking Confirmed!</h3>
+                <p class="text-xs text-gold-400 uppercase tracking-widest mt-1">The Grand Deccan Residency &bull; Hyderabad</p>
+            </div>
+
+            <!-- Modal Receipt Details -->
+            <div class="p-6 space-y-4 text-sm">
+                <div class="flex items-center justify-between bg-cream p-3.5 rounded-xl border border-slate-200">
+                    <div>
+                        <span class="text-[11px] uppercase tracking-wider text-slate-500 block">Reservation ID</span>
+                        <span id="modal-booking-id" class="font-mono font-bold text-base text-navy-900">GDR-849201</span>
+                    </div>
+                    <button id="copy-booking-id-btn" class="px-3 py-1.5 rounded-lg bg-white border border-slate-300 hover:border-gold-500 text-xs font-semibold text-navy-900 transition-colors cursor-pointer">
+                        <i class="fa-regular fa-copy mr-1"></i> <span id="copy-btn-text">Copy ID</span>
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 text-xs sm:text-sm border-b border-slate-100 pb-4">
+                    <div>
+                        <span class="text-slate-500 block">Guest Name</span>
+                        <span id="modal-guest-name" class="font-semibold text-navy-900">-</span>
+                    </div>
+                    <div>
+                        <span class="text-slate-500 block">Contact</span>
+                        <span id="modal-guest-phone" class="font-semibold text-navy-900">-</span>
+                    </div>
+                    <div>
+                        <span class="text-slate-500 block">Room Category</span>
+                        <span id="modal-room-name" class="font-semibold text-navy-900">-</span>
+                    </div>
+                    <div>
+                        <span class="text-slate-500 block">Guests</span>
+                        <span id="modal-guests" class="font-semibold text-navy-900">-</span>
+                    </div>
+                    <div>
+                        <span class="text-slate-500 block">Check-In</span>
+                        <span id="modal-checkin" class="font-semibold text-navy-900">-</span>
+                    </div>
+                    <div>
+                        <span class="text-slate-500 block">Check-Out</span>
+                        <span id="modal-checkout" class="font-semibold text-navy-900">-</span>
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center pt-1">
+                    <div>
+                        <span class="text-xs text-slate-500 block">Total Amount (Incl. 12% GST)</span>
+                        <span id="modal-nights-badge" class="text-xs font-medium text-emerald-700">2 Nights Confirmed</span>
+                    </div>
+                    <span id="modal-total-amount" class="font-serif text-2xl font-bold text-navy-900">₹10,080</span>
+                </div>
+
+                <p class="text-xs text-slate-500 bg-slate-50 p-3 rounded-lg">
+                    A digital confirmation voucher has been sent to <strong id="modal-guest-email" class="text-slate-700">guest@example.com</strong>. Please present a valid Govt. ID (Aadhaar / Passport) at check-in.
+                </p>
+
+                <div class="flex gap-3 pt-2">
+                    <button onclick="window.print()" class="flex-1 py-2.5 px-4 rounded-xl border border-slate-300 hover:bg-slate-50 text-navy-900 font-semibold text-sm transition-colors cursor-pointer">
+                        <i class="fa-solid fa-print mr-1.5"></i> Print Receipt
+                    </button>
+                    <button id="close-modal-btn" class="flex-1 py-2.5 px-4 rounded-xl bg-navy-900 hover:bg-navy-800 text-gold-400 font-semibold text-sm transition-colors cursor-pointer">
+                        Done
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+    <script>
+        // 1. DATA: Room Categories with Indian Hospitality Details & Verified Unsplash Photos
+        const roomsData = [
+            {
+                id: 'deluxe',
+                category: 'deluxe',
+                name: 'Standard Deluxe Room',
+                subtitle: '380 sq.ft • City Skyline View • King Bed',
+                price: 4500,
+                capacity: '2 Adults, 1 Child',
+                image: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80',
+                badge: 'Most Popular',
+                amenities: ['King Size Bed', 'High-Speed Wi-Fi', '43" Smart TV', 'Rain Shower', 'Tea/Coffee Maker']
+            },
+            {
+                id: 'executive',
+                category: 'deluxe',
+                name: 'Executive Suite',
+                subtitle: '620 sq.ft • Separate Living Lounge • Balcony',
+                price: 8200,
+                capacity: '2 Adults, 2 Children',
+                image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80',
+                badge: 'Business Choice',
+                amenities: ['Private Balcony', 'Lounge Seating', 'Bathtub & Rain Shower', 'Complimentary Airport Pickup', 'Mini Bar']
+            },
+            {
+                id: 'family',
+                category: 'family',
+                name: 'Family Garden Room',
+                subtitle: '750 sq.ft • Direct Courtyard Access • Twin King Beds',
+                price: 10500,
+                capacity: '4 Adults, 2 Children',
+                image: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=900&q=80',
+                badge: 'Family Retreat',
+                amenities: ['2 King Beds', 'Private Garden Patio', 'Kids Welcome Kit', 'Interconnecting Option', 'Evening High Tea']
+            },
+            {
+                id: 'villa',
+                category: 'villa',
+                name: 'Royal Heritage Villa',
+                subtitle: '1,250 sq.ft • Private Plunge Pool • Personal Butler',
+                price: 15000,
+                capacity: '4 Adults, 2 Children',
+                image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=900&q=80',
+                badge: 'Royal Signature',
+                amenities: ['Private Plunge Pool', '24/7 Dedicated Butler', 'Hand-Carved Teak Decor', 'Jacuzzi Spa Bath', 'Chauffeur Transfer']
+            }
+        ];
+
+        // 2. DATA: Initial Guest Reviews
+        let reviewsData = [
+            {
+                name: 'Dr. Rajeshwar Kulkarni',
+                room: 'Royal Heritage Villa',
+                rating: 5,
+                date: 'October 2026',
+                comment: 'Impeccable Indian hospitality! The Royal Heritage Villa felt like a Nizam palace with modern comforts. The Hyderabadi breakfast spread at Zaffran is unforgettable.'
+            },
+            {
+                name: 'Meera & Siddharth Nair',
+                room: 'Executive Suite',
+                rating: 5,
+                date: 'September 2026',
+                comment: 'Celebrated our anniversary here. The staff surprised us with rose petal decor and a complimentary cake. The rooftop infinity pool at sunset is breathtaking.'
+            },
+            {
+                name: 'Vikramjit Singh Gill',
+                room: 'Standard Deluxe Room',
+                rating: 4,
+                date: 'November 2026',
+                comment: 'Spotless rooms, super fast Wi-Fi for my business calls, and very courteous valet staff. Great value for money in Banjara Hills.'
+            }
+        ];
+
+        // Format currency in Indian Rupees (₹)
+        function formatINR(amount) {
+            return '₹' + amount.toLocaleString('en-IN');
+        }
+
+        // 3. RENDER ROOMS
+        function renderRooms(filter = 'all') {
+            const grid = document.getElementById('rooms-grid');
+            const filtered = filter === 'all' ? roomsData : roomsData.filter(r => r.category === filter);
+
+            grid.innerHTML = filtered.map(room => `
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-200/80 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-64 overflow-hidden bg-navy-900">
+                            <img 
+                                src="${room.image}" 
+                                onerror="this.onerror=null;this.src='https://placehold.co/900x600/162238/D4AF37?text=${encodeURIComponent(room.name)}';"
+                                alt="${room.name}" 
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            >
+                            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-navy-900/90 backdrop-blur-sm text-gold-400 text-xs font-semibold tracking-wide">
+                                ${room.badge}
+                            </span>
+                            <span class="absolute bottom-4 right-4 px-3 py-1 rounded-lg bg-white/95 text-navy-900 text-xs font-bold shadow">
+                                <i class="fa-solid fa-user-group text-gold-600 mr-1"></i> ${room.capacity}
+                            </span>
+                        </div>
+
+                        <div class="p-6">
+                            <div class="flex justify-between items-start gap-4 mb-2">
+                                <div>
+                                    <h3 class="font-serif text-2xl font-bold text-navy-900">${room.name}</h3>
+                                    <p class="text-xs text-slate-500 mt-0.5">${room.subtitle}</p>
+                                </div>
+                                <div class="text-right shrink-0">
+                                    <span class="font-serif text-2xl font-bold text-navy-900 block">${formatINR(room.price)}</span>
+                                    <span class="text-[11px] text-slate-500">per night + GST</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-slate-100">
+                                ${room.amenities.map(item => `
+                                    <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-cream text-slate-700 text-xs font-medium border border-slate-200/60">
+                                        <i class="fa-solid fa-check text-gold-600 text-[10px] mr-1.5"></i> ${item}
+                                    </span>
+                                `).join('')}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-6 pb-6 pt-2">
+                        <button 
+                            onclick="selectRoomForBooking('${room.id}')" 
+                            class="w-full py-3 px-5 rounded-xl bg-navy-900 hover:bg-gold-500 text-white hover:text-navy-950 font-semibold text-sm transition-all flex items-center justify-center space-x-2 shadow-md cursor-pointer"
+                        >
+                            <span>Book This Room</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+            `).join('');
+        }
+
+        // Room Filter Button Click Handlers
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => {
+                    b.classList.remove('bg-navy-900', 'text-white', 'shadow-md');
+                    b.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+                });
+                btn.classList.add('bg-navy-900', 'text-white', 'shadow-md');
+                btn.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+                renderRooms(btn.dataset.filter);
+            });
+        });
+
+        // Pre-select room and smooth scroll to booking form
+        window.selectRoomForBooking = function(roomId) {
+            const roomSelect = document.getElementById('book-room');
+            roomSelect.value = roomId;
+            calculateTotalFare();
+            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+        };
+
+        // 4. RENDER & MANAGE CUSTOMER REVIEWS
+        function renderReviews(minRating = 'all') {
+            const grid = document.getElementById('reviews-grid');
+            const filtered = minRating === 'all' 
+                ? reviewsData 
+                : reviewsData.filter(r => r.rating >= parseInt(minRating, 10));
+
+            // Update average rating header
+            const avg = (reviewsData.reduce((acc, r) => acc + r.rating, 0) / reviewsData.length).toFixed(1);
+            document.getElementById('avg-rating-display').textContent = `${avg} / 5.0`;
+            document.getElementById('review-count-display').textContent = `(${reviewsData.length} verified guest reviews)`;
+
+            grid.innerHTML = filtered.map(rev => {
+                const stars = Array.from({ length: 5 }, (_, i) => 
+                    `<i class="fa-${i < rev.rating ? 'solid' : 'regular'} fa-star"></i>`
+                ).join('');
+
+                return `
+                    <div class="bg-white rounded-2xl p-6 shadow-md border border-slate-200/80 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="text-gold-500 text-xs space-x-0.5">${stars}</div>
+                                <span class="text-xs text-slate-400">${rev.date}</span>
+                            </div>
+                            <p class="text-sm text-slate-700 italic leading-relaxed mb-5">"${rev.comment}"</p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-slate-100">
+                            <div class="w-10 h-10 rounded-full bg-navy-900 text-gold-400 font-serif font-bold flex items-center justify-center text-sm shrink-0">
+                                ${rev.name.charAt(0).toUpperCase()}
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-navy-900">${rev.name}</h4>
+                                <span class="text-xs text-gold-600 font-medium">Stayed in ${rev.room}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Review Filter & Add New Review Handlers
+        document.getElementById('review-filter').addEventListener('change', (e) => {
+            renderReviews(e.target.value);
+        });
+
+        const reviewPanel = document.getElementById('new-review-panel');
+        document.getElementById('toggle-review-form-btn').addEventListener('click', () => {
+            reviewPanel.classList.toggle('hidden');
+        });
+        document.getElementById('cancel-review-btn').addEventListener('click', () => {
+            reviewPanel.classList.add('hidden');
+        });
+
+        document.getElementById('add-review-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const newRev = {
+                name: document.getElementById('rev-name').value.trim(),
+                room: document.getElementById('rev-room').value,
+                rating: parseInt(document.getElementById('rev-rating').value, 10),
+                date: 'November 2026',
+                comment: document.getElementById('rev-comment').value.trim()
+            };
+            reviewsData.unshift(newRev);
+            renderReviews(document.getElementById('review-filter').value);
+            e.target.reset();
+            reviewPanel.classList.add('hidden');
+        });
+
+        // 5. DYNAMIC BOOKING CALCULATOR & DATE INITIALIZATION
+        function initializeDates() {
+            const today = new Date();
+            const tomorrow = new Date(today);
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            const threeDaysLater = new Date(today);
+            threeDaysLater.setDate(threeDaysLater.getDate() + 3);
+
+            const fmt = (d) => d.toISOString().split('T')[0];
+
+            const heroIn = document.getElementById('hero-checkin');
+            const heroOut = document.getElementById('hero-checkout');
+            const bookIn = document.getElementById('book-checkin');
+            const bookOut = document.getElementById('book-checkout');
+
+            [heroIn, bookIn].forEach(el => {
+                el.min = fmt(today);
+                el.value = fmt(tomorrow);
+            });
+            [heroOut, bookOut].forEach(el => {
+                el.min = fmt(tomorrow);
+                el.value = fmt(threeDaysLater);
+            });
+        }
+
+        function getNightsCount(checkInStr, checkOutStr) {
+            const d1 = new Date(checkInStr);
+            const d2 = new Date(checkOutStr);
+            const diffTime = d2 - d1;
+            const nights = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+            return nights > 0 ? nights : 0;
+        }
+
+        function calculateTotalFare() {
+            const roomSelect = document.getElementById('book-room');
+            const selectedOption = roomSelect.options[roomSelect.selectedIndex];
+            const rate = parseInt(selectedOption.dataset.price, 10);
+            const roomName = selectedOption.dataset.name;
+
+            const checkIn = document.getElementById('book-checkin').value;
+            const checkOut = document.getElementById('book-checkout').value;
+            const adults = document.getElementById('book-adults').value;
+            const children = document.getElementById('book-children').value;
+
+            let nights = getNightsCount(checkIn, checkOut);
+            if (nights <= 0) nights = 1; // Fallback display
+
+            const subtotal = rate * nights;
+            const gst = Math.round(subtotal * 0.12);
+            const total = subtotal + gst;
+
+            document.getElementById('summary-room-name').textContent = roomName;
+            document.getElementById('summary-nights').textContent = `${nights} Night${nights > 1 ? 's' : ''}`;
+            document.getElementById('summary-guests').textContent = `${adults} Adult${adults > 1 ? 's' : ''}, ${children} Child${children == 1 ? '' : 'ren'}`;
+            document.getElementById('summary-rate-calc').textContent = `${formatINR(rate)} × ${nights} night${nights > 1 ? 's' : ''}`;
+            document.getElementById('summary-subtotal').textContent = formatINR(subtotal);
+            document.getElementById('summary-gst').textContent = formatINR(gst);
+            document.getElementById('summary-total').textContent = formatINR(total);
+
+            return { roomName, rate, nights, subtotal, gst, total, checkIn, checkOut, adults, children };
+        }
+
+        // Sync Hero Quick Search Bar to Main Booking Section
+        document.getElementById('quick-search-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const hIn = document.getElementById('hero-checkin').value;
+            const hOut = document.getElementById('hero-checkout').value;
+            const [adults, children] = document.getElementById('hero-guests').value.split('-');
+
+            document.getElementById('book-checkin').value = hIn;
+            document.getElementById('book-checkout').value = hOut;
+            document.getElementById('book-adults').value = adults;
+            document.getElementById('book-children').value = children;
+
+            calculateTotalFare();
+            document.getElementById('rooms').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Recalculate fare whenever booking inputs change
+        ['book-room', 'book-checkin', 'book-checkout', 'book-adults', 'book-children'].forEach(id => {
+            document.getElementById(id).addEventListener('change', calculateTotalFare);
+        });
+
+        // 6. HANDLE BOOKING SUBMISSION & CONFIRMATION MODAL
+        document.getElementById('hotel-booking-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const errorBanner = document.getElementById('booking-error-banner');
+            const errorText = document.getElementById('booking-error-text');
+
+            const checkIn = document.getElementById('book-checkin').value;
+            const checkOut = document.getElementById('book-checkout').value;
+            const actualNights = getNightsCount(checkIn, checkOut);
+
+            if (actualNights <= 0) {
+                errorText.textContent = 'Check-out date must be at least 1 night after your Check-in date.';
+                errorBanner.classList.remove('hidden');
+                errorBanner.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                return;
+            }
+            errorBanner.classList.add('hidden');
+
+            const fare = calculateTotalFare();
+            const guestName = document.getElementById('book-name').value.trim();
+            const guestEmail = document.getElementById('book-email').value.trim();
+            const guestPhone = document.getElementById('book-phone').value.trim();
+
+            // Generate Random Booking Reference ID
+            const randomCode = Math.floor(100000 + Math.random() * 900000);
+            const bookingId = `GDR-${randomCode}`;
+
+            // Populate Modal
+            document.getElementById('modal-booking-id').textContent = bookingId;
+            document.getElementById('modal-guest-name').textContent = guestName;
+            document.getElementById('modal-guest-phone').textContent = guestPhone;
+            document.getElementById('modal-guest-email').textContent = guestEmail;
+            document.getElementById('modal-room-name').textContent = fare.roomName;
+            document.getElementById('modal-guests').textContent = `${fare.adults} Adults, ${fare.children} Children`;
+            document.getElementById('modal-checkin').textContent = fare.checkIn;
+            document.getElementById('modal-checkout').textContent = fare.checkOut;
+            document.getElementById('modal-nights-badge').textContent = `${fare.nights} Night${fare.nights > 1 ? 's' : ''} Confirmed`;
+            document.getElementById('modal-total-amount').textContent = formatINR(fare.total);
+
+            // Show Modal
+            const modal = document.getElementById('confirmation-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        });
+
+        // Close Modal Handlers
+        function closeConfirmationModal() {
+            const modal = document.getElementById('confirmation-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+        document.getElementById('close-modal-btn').addEventListener('click', closeConfirmationModal);
+        document.getElementById('close-modal-top').addEventListener('click', closeConfirmationModal);
+
+        // Copy Booking ID using safe execCommand fallback for iFrames
+        document.getElementById('copy-booking-id-btn').addEventListener('click', () => {
+            const idText = document.getElementById('modal-booking-id').textContent;
+            const tempInput = document.createElement('input');
+            tempInput.value = idText;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            try {
+                document.execCommand('copy');
+                document.getElementById('copy-btn-text').textContent = 'Copied!';
+                setTimeout(() => {
+                    document.getElementById('copy-btn-text').textContent = 'Copy ID';
+                }, 2000);
+            } catch (err) {
+                console.error('Copy failed', err);
+            }
+            document.body.removeChild(tempInput);
+        });
+
+        // Mobile Navigation Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // Initialize App on Load
+        window.addEventListener('DOMContentLoaded', () => {
+            initializeDates();
+            renderRooms('all');
+            renderReviews('all');
+            calculateTotalFare();
+        });
+    </script>
+</body>
+</html>
